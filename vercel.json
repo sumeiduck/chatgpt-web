@@ -1,6 +1,8 @@
 {
   "routes": [
     { "src": "/api/(.*)", "dest": "https://1485847.1314528.xyz/api/$1" },
-    { "src": "/(.*)", "dest": "/$1" }
+    { "src": "/(.*)", "dest": "/$1" },
+		{ "handle": "filesystem" },
+    { "src": "/(.*)", "status": 404, "dest": "/" }
   ]
 }
