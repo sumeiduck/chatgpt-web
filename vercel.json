@@ -5,11 +5,11 @@
   ],
   "builds": [
     {
-      "src": "./src",
+      "src": "/src",
       "use": "@vercel/static-build",
       "config": {
         "buildCommand": "pnpm build",
-        "outputDirectory": "dist/"
+        "outputDirectory": "/dist/"
       }
     }
   ]
