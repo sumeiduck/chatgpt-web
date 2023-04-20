@@ -1,7 +1,7 @@
 {
   "routes": [
     { "src": "/api/(.*)", "dest": "https://1485847.1314528.xyz/api/$1" },
-    { "src": "/(.*)", "dest": "/index.html" }
+    { "src": "/(.*)", "dest": "/$1" }
   ],
   "builds": [
     {
