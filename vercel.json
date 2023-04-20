@@ -2,15 +2,5 @@
   "routes": [
     { "src": "/api/(.*)", "dest": "https://1485847.1314528.xyz/api/$1" },
     { "src": "/(.*)", "dest": "/$1" }
-  ],
-  "builds": [
-    {
-      "src": "/src",
-      "use": "@vercel/static-build",
-      "config": {
-        "buildCommand": "pnpm build",
-        "outputDirectory": "/dist/"
-      }
-    }
   ]
 }
