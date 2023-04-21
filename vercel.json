@@ -1,38 +1,8 @@
 {
-  "version": 2,
-  "builds": [
-    {
-      "src": "index.html",
-      "use": "@now/static"
-    },
-    {
-      "src": "vite.config.js",
-      "use": "@now/static-build"
-    },
-    {
-      "src": "service/package.json",
-      "use": "@vercel/node",
-      "env": {
-        "TS_NODE_FILES": true
-      }
-    }
-  ],
   "routes": [
-    { 
-      "src": "/api/(.*)", 
-      "dest": "http://localhost:3002/$1" 
-    },
-    { 
-      "src": "/(.*)", 
-      "dest": "/$1" 
-    },
-    { 
-      "handle": "filesystem" 
-    },
-    { 
-      "src": "/(.*)",
-      "status": 404, 
-      "dest": "/" 
-    }
+    { "src": "/api/(.*)", "dest": "https://1485847.1314528.xyz/api/$1" },
+    { "src": "/(.*)", "dest": "/$1" },
+		{ "handle": "filesystem" },
+    { "src": "/(.*)", "status": 404, "dest": "/" }
   ]
 }
